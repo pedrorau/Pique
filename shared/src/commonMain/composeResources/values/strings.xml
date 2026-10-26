@@ -23,7 +23,50 @@
     <string name="home_section_baits">Carnadas</string>
     <string name="home_section_next_version">Llega en la próxima versión</string>
 
-    <!-- Sections still in progress -->
+    <!-- Read the water: rip current ("pozo") -->
     <string name="read_water_title">Leer el agua</string>
+    <string name="pozo_title">El pozo</string>
+    <string name="pozo_intro">Lo que muchos pescadores llaman pozo es una corriente de resaca vista desde arriba: un corte hondo en la barra de arena por donde el agua sale mar adentro.</string>
+    <string name="pozo_animation_description">Animación de una playa vista desde arriba: las olas rompen sobre dos barras de arena, el pozo queda oscuro al centro, la corriente sale mar adentro y un pescador lanza al borde.</string>
+    <string name="pozo_play">Reproducir animación</string>
+    <string name="pozo_pause">Pausar animación</string>
+    <string name="pozo_tide">Marea</string>
+    <string name="pozo_tide_low">Bajamar</string>
+    <string name="pozo_tide_mid">Media</string>
+    <string name="pozo_tide_high">Pleamar</string>
+    <string name="pozo_waves">Oleaje</string>
+    <string name="pozo_waves_small">Chico</string>
+    <string name="pozo_waves_medium">Medio</string>
+    <string name="pozo_waves_big">Grande</string>
+    <string name="pozo_show_flow">Corrientes</string>
+    <string name="pozo_show_fish">Peces</string>
+    <string name="pozo_show_marks">Números</string>
+    <string name="pozo_rip_strength">Resaca %1$s</string>
+    <string name="pozo_rip_weak">débil</string>
+    <string name="pozo_rip_moderate">moderada</string>
+    <string name="pozo_rip_strong">fuerte</string>
+    <string name="pozo_tide_note_low">La barra queda casi a la vista y la resaca corre más fuerte. Buen momento para ubicar el pozo.</string>
+    <string name="pozo_tide_note_mid">Buen momento para pescar el borde del pozo.</string>
+    <string name="pozo_tide_note_high">La barra se cubre y rompe menos. Pesca la primera canaleta, cerca de la orilla.</string>
+    <string name="pozo_legend_title">Qué estás viendo</string>
+    <string name="pozo_legend_1_title">Barra de arena</string>
+    <string name="pozo_legend_1_body">Banco de poco fondo. La ola rompe encima y deja la espuma blanca.</string>
+    <string name="pozo_legend_2_title">El pozo</string>
+    <string name="pozo_legend_2_body">Corte hondo en la barra. Con más fondo la ola no rompe, así que el agua se ve oscura y sin espuma.</string>
+    <string name="pozo_legend_3_title">Corriente de alimentación</string>
+    <string name="pozo_legend_3_body">El agua que empujan las olas corre paralela a la orilla, por detrás de la barra, buscando salida.</string>
+    <string name="pozo_legend_4_title">Cuello de la resaca</string>
+    <string name="pozo_legend_4_body">Las corrientes se juntan y salen mar adentro por el pozo, arrastrando muy muy, gusanos y restos.</string>
+    <string name="pozo_legend_5_title">Cabeza de la resaca</string>
+    <string name="pozo_legend_5_body">Pasada la barra, la corriente se abre en forma de hongo y pierde fuerza.</string>
+    <string name="pozo_legend_6_title">Las olas se cruzan</string>
+    <string name="pozo_legend_6_body">Sobre el pozo la ola avanza más rápido que sobre la barra, se dobla y llega en diagonal por los costados.</string>
+    <string name="pozo_legend_7_title">Dónde lanzar</string>
+    <string name="pozo_legend_7_body">Al borde del pozo, no al centro. La corriente no se lleva la carnada y el pez patrulla ese borde.</string>
+    <string name="pozo_spot_title">Cómo reconocerlo desde la orilla</string>
+    <string name="pozo_spot_body">Busca un hueco más oscuro donde rompen las olas, agua picada o con otra textura, espuma o arena turbia saliendo mar adentro y un entrante en la orilla.</string>
+    <string name="pozo_safety">Si una resaca te arrastra, no nades contra ella. Nada paralelo a la orilla hasta salir de la corriente.</string>
+
+    <!-- Sections still in progress -->
     <string name="coming_soon">Esta sección está en construcción.</string>
 </resources>
