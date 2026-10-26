@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Pique" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/surface</item>
+    </style>
+
+    <color name="surface">#0B1619</color>
+</resources>

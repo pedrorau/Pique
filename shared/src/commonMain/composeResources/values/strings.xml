@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Pique</string>
+    <string name="home_overline">GUÍA DE PESCA</string>
+    <string name="home_tagline">Aprende a leer el agua, hacer nudos, encarnar y reconocer las especies de la costa.</string>
+    <string name="home_status">v1.0 · en construcción</string>
+</resources>
