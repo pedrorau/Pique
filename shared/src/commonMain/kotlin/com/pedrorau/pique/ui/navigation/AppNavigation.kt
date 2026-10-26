@@ -58,8 +58,8 @@ private data class TopLevelDestination(
 
 private val topLevelDestinations = listOf(
     TopLevelDestination(Routes.HOME, Res.string.nav_home, Res.drawable.ic_home),
-    TopLevelDestination(Routes.KNOTS, Res.string.nav_knots, Res.drawable.ic_knot),
-    TopLevelDestination(Routes.SPECIES, Res.string.nav_species, Res.drawable.ic_fish)
+    TopLevelDestination(Routes.KNOTS, Res.string.nav_knots, Res.drawable.ic_knot)
+    // Especies joins the bar when its screen is released.
 )
 
 // Standard bottom-bar behavior: one copy of each tab on the back stack, each tab keeps its state.
@@ -97,9 +97,10 @@ fun AppNavigation() {
                 HomeScreen(
                     onOpenReadWater = { navController.navigate(Routes.READ_WATER) },
                     onOpenKnots = { navController.navigateToTopLevel(Routes.KNOTS) },
-                    onOpenModalities = { navController.navigate(Routes.MODALITIES) },
-                    onOpenSpecies = { navController.navigateToTopLevel(Routes.SPECIES) },
-                    onOpenSafety = { navController.navigate(Routes.SAFETY) }
+                    // Not released yet: shown as upcoming until their feature branches land.
+                    onOpenModalities = null,
+                    onOpenSpecies = null,
+                    onOpenSafety = null
                 )
             }
             composable(Routes.KNOTS) {

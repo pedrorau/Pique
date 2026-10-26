@@ -55,9 +55,9 @@ import org.jetbrains.compose.resources.stringResource
 fun HomeScreen(
     onOpenReadWater: () -> Unit,
     onOpenKnots: () -> Unit,
-    onOpenModalities: () -> Unit,
-    onOpenSpecies: () -> Unit,
-    onOpenSafety: () -> Unit
+    onOpenModalities: (() -> Unit)?,
+    onOpenSpecies: (() -> Unit)?,
+    onOpenSafety: (() -> Unit)?
 ) {
     Column(
         modifier = Modifier
@@ -183,14 +183,19 @@ private fun SectionRow(content: @Composable androidx.compose.foundation.layout.R
     )
 }
 
+/** A section; with a null [onClick] it isn't released yet and shows as upcoming. */
 @Composable
 private fun SectionCard(
     title: String,
     subtitle: String,
     icon: DrawableResource,
-    onClick: () -> Unit,
+    onClick: (() -> Unit)?,
     modifier: Modifier = Modifier
 ) {
+    if (onClick == null) {
+        UpcomingSectionCard(title = title, modifier = modifier)
+        return
+    }
     Surface(
         onClick = onClick,
         shape = MaterialTheme.shapes.medium,
