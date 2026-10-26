@@ -67,6 +67,16 @@
     <string name="pozo_spot_body">Busca un hueco más oscuro donde rompen las olas, agua picada o con otra textura, espuma o arena turbia saliendo mar adentro y un entrante en la orilla.</string>
     <string name="pozo_safety">Si una resaca te arrastra, no nades contra ella. Nada paralelo a la orilla hasta salir de la corriente.</string>
 
+    <!-- Knots -->
+    <string name="knots_intro">Cada nudo se arma paso a paso. Míralo animado o avanza a tu ritmo.</string>
+    <string name="knot_animation_description">Animación del %1$s, paso %2$d de %3$d</string>
+    <string name="knot_step_of">Paso %1$d de %2$d</string>
+    <string name="knot_previous_step">Paso anterior</string>
+    <string name="knot_next_step">Paso siguiente</string>
+    <string name="knot_play">Reproducir</string>
+    <string name="knot_pause">Pausar</string>
+    <string name="knot_replay">Ver de nuevo</string>
+
     <!-- Sections still in progress -->
     <string name="coming_soon">Esta sección está en construcción.</string>
 </resources>

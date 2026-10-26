@@ -17,6 +17,7 @@ App Android de contenido didáctico de pesca: leer el agua (pozos, resacas), mod
 - `shared` (KMP, solo target Android por ahora): pantallas Compose, tema, contenido y lógica.
   - `ui/theme/` — `Color.kt`, `Type.kt`, `Theme.kt`. Reflejan `docs/design-system.md`; cambiar ambos juntos.
   - Recursos en `composeResources/` (strings, fuentes). Paquete `com.pedrorau.pique.resources`.
+  - Contenido en `composeResources/files/` como JSON (textos en español dentro del JSON). Nudos: `files/knots/<id>.json` y su lista en `files/knots/index.json`; el formato está documentado en `knots/Knot.kt`.
 - `androidApp`: solo `MainActivity`, manifest, tema de ventana y launcher.
 
 ## Diseño
@@ -24,7 +25,7 @@ App Android de contenido didáctico de pesca: leer el agua (pozos, resacas), mod
 - Fuente de verdad: `docs/design-system.md`. Versión visual: artefacto "Pique Design System".
 - Usar `MaterialTheme` para lo que Material 3 cubre y `PiqueTheme.colors` / `PiqueTheme.typography` para ilustración, estados y el estilo `data`.
 - `accent` (naranja boya) una sola vez por pantalla. Colores de mar/arena/espuma solo en ilustraciones.
-- Textos de UI en español (tuteo, vocabulario de orilla peruana), siempre en `strings.xml`.
+- Textos de UI en español (tuteo, vocabulario de orilla peruana), siempre en `strings.xml`. El contenido (nudos, especies) va en los JSON.
 
 ## Convenciones
 
