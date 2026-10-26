@@ -26,7 +26,7 @@ import com.pedrorau.pique.resources.ic_knot
 import com.pedrorau.pique.resources.nav_home
 import com.pedrorau.pique.resources.nav_knots
 import com.pedrorau.pique.resources.nav_species
-import com.pedrorau.pique.resources.read_water_title
+import com.pedrorau.pique.ui.readwater.ReadWaterScreen
 import com.pedrorau.pique.ui.components.ComingSoonScreen
 import com.pedrorau.pique.ui.home.HomeScreen
 import org.jetbrains.compose.resources.DrawableResource
@@ -102,10 +102,7 @@ fun AppNavigation() {
                 ComingSoonScreen(title = stringResource(Res.string.nav_species))
             }
             composable(Routes.READ_WATER) {
-                ComingSoonScreen(
-                    title = stringResource(Res.string.read_water_title),
-                    onBack = { navController.popBackStack() }
-                )
+                ReadWaterScreen(onBack = { navController.popBackStack() })
             }
             composable(Routes.MODALITIES) {
                 ComingSoonScreen(
