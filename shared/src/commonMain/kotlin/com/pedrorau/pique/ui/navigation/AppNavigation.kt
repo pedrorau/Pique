@@ -17,6 +17,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
 import com.pedrorau.pique.resources.Res
 import com.pedrorau.pique.resources.home_section_modalities
 import com.pedrorau.pique.resources.home_section_safety
@@ -29,10 +30,13 @@ import com.pedrorau.pique.resources.nav_species
 import com.pedrorau.pique.ui.readwater.ReadWaterScreen
 import com.pedrorau.pique.ui.components.ComingSoonScreen
 import com.pedrorau.pique.ui.home.HomeScreen
+import com.pedrorau.pique.ui.knots.KnotDetailScreen
+import com.pedrorau.pique.ui.knots.KnotsScreen
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
+import kotlinx.serialization.Serializable
 
 object Routes {
     const val HOME = "home"
@@ -42,6 +46,9 @@ object Routes {
     const val MODALITIES = "modalities"
     const val SAFETY = "safety"
 }
+
+@Serializable
+data class KnotDetailRoute(val id: String)
 
 private data class TopLevelDestination(
     val route: String,
@@ -96,7 +103,13 @@ fun AppNavigation() {
                 )
             }
             composable(Routes.KNOTS) {
-                ComingSoonScreen(title = stringResource(Res.string.nav_knots))
+                KnotsScreen(onOpenKnot = { navController.navigate(KnotDetailRoute(it)) })
+            }
+            composable<KnotDetailRoute> { entry ->
+                KnotDetailScreen(
+                    knotId = entry.toRoute<KnotDetailRoute>().id,
+                    onBack = { navController.popBackStack() }
+                )
             }
             composable(Routes.SPECIES) {
                 ComingSoonScreen(title = stringResource(Res.string.nav_species))
