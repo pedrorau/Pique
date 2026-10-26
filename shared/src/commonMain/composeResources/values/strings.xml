@@ -13,7 +13,7 @@
     <string name="home_featured_overline">LEER EL AGUA</string>
     <string name="home_featured_title">El pozo: dónde esperan los peces</string>
     <string name="home_featured_body">Mira la animación y aprende a ubicarlo desde la orilla</string>
-    <string name="home_section_knots_subtitle">5 animados, paso a paso</string>
+    <string name="home_section_knots_subtitle">Animados, paso a paso</string>
     <string name="home_section_modalities">Modalidades</string>
     <string name="home_section_modalities_subtitle">Surfcasting, peña, spinning</string>
     <string name="home_section_species_subtitle">10 con su talla mínima</string>
@@ -21,7 +21,7 @@
     <string name="home_section_safety_subtitle">Resacas y oleajes</string>
     <string name="home_section_rigs">Aparejos</string>
     <string name="home_section_baits">Carnadas</string>
-    <string name="home_section_next_version">Llega en la próxima versión</string>
+    <string name="home_section_next_version">Próximamente</string>
 
     <!-- Read the water: rip current ("pozo") -->
     <string name="read_water_title">Leer el agua</string>
